@@ -18,13 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Aaron's Blog
+title: 
+  en: Aaron's Blog
+  zh-hk: Aaron隨口噏
 author: Aaron B. Wong
 email: a.wong@erasmusmc.nl
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the blog of Aaron B. Wong, 
-  a Hong Kong-born neuroscientist residing in the Netherlands. 
-  Here, I share my thoughts on science, art, and life in general.
+description: 
+  en: >- # this means to ignore newlines until "baseurl:"
+    This is the blog of Aaron B. Wong, 
+    a Hong Kong-born neuroscientist residing in the Netherlands. 
+    Here, I share my thoughts on science, art, and life in general.
+  zh-hk: >- # this means to ignore newlines until "baseurl:"
+    呢度係 Aaron B. Wong 嘅部落格， 
+    一個生於香港的神經科學家，而家住喺荷蘭。 
+    我會喺呢度分享我對科學、藝術同生活嘅想法。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aaronbwong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aaronbwong
@@ -38,6 +45,15 @@ theme: minima
 plugins:
   - jekyll-feed
   # - jekyll-remote-theme
+  - jekyll-polyglot
+# Polyglot Settings
+languages: ["en", "zh-hk"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "assets", "sitemap.xml"]
+parallel_localization: false
+lang_from_path: true
+sass:
+    sourcemap: never
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
