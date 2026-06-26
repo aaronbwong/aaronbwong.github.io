@@ -40,12 +40,12 @@ github_username:  aaronbwong
 linkedin_username: aaronbwong
 
 # Build settings
-theme: minima
+theme: minima@v2.5.2
 # remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
-  # - jekyll-remote-theme
   - jekyll-polyglot
+  # - jekyll-remote-theme
 # Polyglot Settings
 languages: ["en", "zh-hk"]
 default_lang: "en"
